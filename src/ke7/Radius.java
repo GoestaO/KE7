@@ -3,21 +3,19 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 package ke7;
 
 /**
  *
  * @author goesta
  */
-public class KE7 {
+public class Radius {
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-       Filter f = new Filter("/home/goesta/eingabedatei.txt");
-        f.filter();
+    public double radius(double flaeche) {
+
+        double pi = Math.PI;
+        double radius = Math.sqrt(flaeche / pi);
+        return radius;
     }
-    
+
 }
